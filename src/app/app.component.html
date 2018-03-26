@@ -1,0 +1,35 @@
+<!-- NAVBAR BEGINS -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+            <a class="navbar-brand"><img class = "navbrand" src=
+                "https://avatars0.githubusercontent.com/u/36156355?s=400&v=4" 
+                    alt="calligraphy-fonts" border="0"></a>
+      </div>
+      <ul class="nav navbar-nav">
+          <li><a href="#">T-Boya</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Projects<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li *ngFor = "let user of users"><a href="{{user.homepage}}"><p>{{ user.name }}</p></a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">Instructions<span class="caret"></span></a>
+              <ul class="dropdown-menu instructions">
+                <li><p>Type in an existing username to view all of that user's repositories. More features coming soon like:</p>
+                  <p>• Separate search results page</p>
+                  <p>• User Search</p>
+                </li>
+              </ul>
+            </li>
+      </ul>
+      </div>
+</nav>
+<!-- NAVBAR ENDS -->
+<app-search-page></app-search-page>
+<!-- <p>{{ input }}</p>
+<br>
+<app-search-page *ngIf="!inputSubmitted"></app-search-page> -->
+<!-- ; else input -->
+<!-- <ng-template #input><app-search-results-page></app-search-results-page></ng-template> -->

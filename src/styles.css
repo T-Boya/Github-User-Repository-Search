@@ -1,0 +1,16 @@
+html {
+    color: #EAE9E7;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* overflow: hidden; */
+    background: url('/assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+textarea:focus, input:focus{
+    outline: none;
+}

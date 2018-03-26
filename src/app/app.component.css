@@ -1,0 +1,21 @@
+.navbar.navbar-default.navbar-fixed-top{
+    opacity: 0.9;
+    background-color: rgb(202, 200, 195);
+}
+.navbrand {
+    margin-top: -10px;
+    height: 40px;
+    width: 40px;
+}
+.instructions {
+    width: 400px;
+    padding: 10px;
+}
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
+@media (min-width: 979px) {
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+      display: block;
+    }
+  }

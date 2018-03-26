@@ -1,0 +1,29 @@
+<div class = "Github">
+    <h1 class = "title">
+        <p>Repo Search</p>
+    </h1>
+    <!-- <input class = "search" (input)="changeComponent($event)"> -->
+    <input class = "search" [(ngModel)]="searchQuery">
+    <p>{{ input }}</p>
+    <button (click)="searchUsers(searchQuery)" type="button" class="btn btn-primary btn-md">Find Repos!</button>
+    <br>
+    <p class = "credit">By: <span class = "name">Tinashe Osewe</span></p>
+  </div>
+
+<!-- <div>
+    <img src = {{ user.avatar_url }}
+</div> -->
+
+  <div *ngFor = "let user of users" class = "repos">
+      <img src = "{{ user.owner.avatar_url }}" class = userImage>
+      <!-- <p class = "username">{{ user.owner.login }}: </p> -->
+
+      <a href={{user.homepage}}><p> ID: {{ user.id }}, Name: {{ user.name }}</p></a>
+      <br>
+      <p>Description: {{ user.description }}</p>
+  </div>
+
+
+  <p class = "photo">
+      Photo by Scott Webb on Unsplash
+  </p>
