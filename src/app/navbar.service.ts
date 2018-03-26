@@ -19,4 +19,4 @@ export class NavbarService {
   // return this._http.get(this.API_URL + query + this.URL_SUFFIX).map(res => res.json()); API request for general user information
   return this._http.get(this.API_URL + 't-boya' + this.URL_REPOS + this.URL_SUFFIX).map(res => res.json());
   }
-}
+} 
