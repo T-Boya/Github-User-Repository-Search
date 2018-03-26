@@ -21,7 +21,7 @@ export class SearchPageComponent implements OnInit {
   handleError(error) {
     console.log(error);
   }
-g
+
   // input:string = ''
   // inputSubmitted:boolean = false;
 
