@@ -12,7 +12,7 @@ export class SearchPageService {
   private API_URL: string = 'https://api.github.com/users/';
   private URL_SUFFIX: string = '?access_token=' + this.API_KEY;
   private URL_REPOS: string = '/repos'
-
+ 
   constructor(private _http: Http) { }
 
   getUser(query) {
