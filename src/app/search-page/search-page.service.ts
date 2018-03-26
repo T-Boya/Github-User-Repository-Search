@@ -9,7 +9,7 @@ import 'rxjs/add/operator/map';
 export class SearchPageService {
   private query:string;
   private API_KEY: string = environment.GITHUB_API_KEY;
-  private API_URL: string = environment.GITHUB_API_URL;
+  private API_URL: string = 'https://api.github.com/users/';
   private URL_SUFFIX: string = '?access_token=' + this.API_KEY;
   private URL_REPOS: string = '/repos'
 
