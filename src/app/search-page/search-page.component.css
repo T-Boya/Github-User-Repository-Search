@@ -37,6 +37,7 @@
     font-family: 'Dancing Script', cursive;
 }
 .btn.btn-primary.btn-md {
+    margin-top: 10px;
     opacity: 0%;
     background: none;
     padding: 12px 22px;
