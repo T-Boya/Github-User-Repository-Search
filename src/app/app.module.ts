@@ -25,4 +25,4 @@ import { NavbarService } from './navbar.service';
   providers: [SearchPageService, NavbarService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 
