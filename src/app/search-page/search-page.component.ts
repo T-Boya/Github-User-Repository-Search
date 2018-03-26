@@ -10,6 +10,7 @@ import { HttpModule } from '@angular/http';
 export class SearchPageComponent implements OnInit {
   users: any[];
   reposFound: boolean = false;
+  searchQuery: any = ''
 
   handleSuccess(data) {
     this.reposFound = true;
